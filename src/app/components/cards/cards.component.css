@@ -1,0 +1,58 @@
+.ads {
+  border: 2px green solid;
+  height: 10%;
+}
+
+button {
+  font-size: 13px;
+}
+
+div.card {
+  background-color: sandybrown;
+  display: none;
+  height: 100vh;
+  text-align: center;
+  vertical-align: middle;
+  width: 100vw;
+}
+
+h3 {
+  padding-bottom: 2vh;
+  padding-top: 1vh;
+}
+
+.image-card {
+  border: 2px blue solid;
+}
+
+.text {
+  border: 2px red solid;
+  margin: auto;
+  max-width: 800px;
+  padding-bottom: 2vh;
+  overflow-y: auto;
+  padding-top: 1vh;
+  text-align: justify;
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  div.text {
+    font-size: 1.2vw;
+    height: 21%;
+  }
+  .image-card {
+    height: 50%;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  div.text {
+    font-size: 5vw;
+    height: 41%;
+  }
+  .image-card {
+    height: 30%;
+  }
+}
