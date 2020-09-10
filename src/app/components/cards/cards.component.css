@@ -4,55 +4,176 @@
 }
 
 button {
-  font-size: 13px;
+  font-size: 15px;
+  margin-right: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
-div.card {
-  background-color: sandybrown;
-  display: none;
-  height: 100vh;
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-title {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.container {
+  display: table-cell;
   text-align: center;
   vertical-align: middle;
   width: 100vw;
 }
 
-h3 {
-  padding-bottom: 2vh;
-  padding-top: 1vh;
-}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 3%;
+  padding-right: 3%;
 
-.image-card {
-  border: 2px blue solid;
-}
-
-.text {
-  border: 2px red solid;
-  margin: auto;
-  max-width: 800px;
-  padding-bottom: 2vh;
-  overflow-y: auto;
-  padding-top: 1vh;
   text-align: justify;
 }
 
+h3 {
+  font-size: 2rem;
+}
+
+.image-card {
+  /* background-color: blue; */
+
+  overflow: hidden;
+  width: 100%;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.mobile-ad {
+  background-color: #eee;
+  height: 50px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  width: 100%;
+}
+
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
-@media screen and (min-width: 601px) {
-  div.text {
+@media screen and (min-width: 701px) {
+  .buttons {
+    height: 10%;
+    width: 100%;
+  }
+
+  .card-title {
+    height: 11.1%;
+  }
+
+  .container {
+    height: 100%;
+  }
+
+  .content {
+    height: 90%;
+    width: 94%;
+  }
+
+  div {
+    float: left;
+  }
+
+  .down-right {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 70%;
+  }
+
+  .down-right-ad {
+    background-color: #eee;
+    flex-shrink: 0;
+    height: 100%;
+    width: 310px;
+  }
+
+  .down-right-content {
+    flex: auto;
+    height: 90%;
+  }
+
+  .image-card {
+    height: 100%;
+  }
+
+  .mobile-ad {
+    display: none;
+  }
+
+  .text {
     font-size: 1.2vw;
     height: 21%;
   }
-  .image-card {
-    height: 50%;
+
+  .top-left {
+    height: 100%;
+    width: 30%;
   }
 }
 
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-@media screen and (max-width: 600px) {
-  div.text {
+@media screen and (max-width: 700px) {
+  html,
+  body {
+    min-height: -webkit-fill-available;
+  }
+
+  .buttons {
+    padding-bottom: 7px;
+    padding-top: 7px;
+  }
+
+  .card-title {
+    height: 7vh;
+  }
+
+  .container {
+    height: 100%;
+  }
+
+  .content {
+    height: 36vh;
+    overflow-y: scroll;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .down-right {
+    height: 60vh;
+  }
+
+  .down-right-ad {
+    height: 10vh;
+  }
+
+  .down-right-content {
+    height: 50vh;
+  }
+
+  .image-card {
+    height: 38vh;
+  }
+  .text {
     font-size: 5vw;
     height: 41%;
   }
-  .image-card {
-    height: 30%;
+
+  .top-left {
+    height: 39vh;
   }
 }
