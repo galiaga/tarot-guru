@@ -31,7 +31,7 @@ button {
 }
 
 .content {
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
   padding-left: 3%;
@@ -95,7 +95,7 @@ img {
     width: 70%;
   }
 
-  .down-right-ad {
+  .right-ad {
     background-color: #eee;
     flex-shrink: 0;
     height: 100%;
@@ -147,26 +147,27 @@ img {
   }
 
   .content {
-    height: 36vh;
+    height: 40vh;
     overflow-y: scroll;
     padding-left: 5px;
     padding-right: 5px;
   }
 
   .down-right {
-    height: 60vh;
+    display: block;
+    height: 65vh;
   }
 
-  .down-right-ad {
-    height: 10vh;
+  .right-ad {
+    display: none;
   }
 
   .down-right-content {
-    height: 50vh;
+    height: 65vh;
   }
 
   .image-card {
-    height: 38vh;
+    height: 34vh;
   }
   .text {
     font-size: 5vw;
@@ -174,6 +175,12 @@ img {
   }
 
   .top-left {
-    height: 39vh;
+    height: 35vh;
+  }
+}
+
+@media screen and (max-width: 376px) and (max-height: 815px) {
+  .content {
+    height: 25vh;
   }
 }
